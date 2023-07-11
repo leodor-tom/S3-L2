@@ -198,7 +198,7 @@
       const generateTable = function () {
         const body = document.querySelector("body");
         const newTable = document.createElement("table");
-        newTable.innerHTML = "<tr><td>immagine</td><td>nome prodotto</td><td>quantità</td><td>prezzo</td></tr>";
+        newTable.innerHTML = "<tr><th>immagine</th><th>nome prodotto</th><th>quantità</th><th>prezzo</th></tr>";
         newTable.classList.add("tableArea");
         body.appendChild(newTable);
       };
@@ -209,7 +209,8 @@
       const table = document.querySelector("table");
       const addRow = function () {
         const newLine = document.createElement("tr");
-        newLine.innerHTML = "<tr><td>img</td><td>animali</td><td>1</td><td>50€</td></tr>";
+        newLine.innerHTML =
+          "<tr><td><img $`https://media.istockphoto.com/id/1063204676/it/foto/illuminazione-dellalbero-di-natale-di-notte-decorazioni-di-natale-regali-regali.jpg?s=1024x1024&w=is&k=20&c=r25aVAIb0UQokqNVn-pXapyAOLZaSjzQjEsZwOn6kL8=  width = 100%`/></td><td>animali</td><td>1</td><td>50€</td></tr>";
         table.appendChild(newLine);
       };
 
