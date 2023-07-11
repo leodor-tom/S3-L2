@@ -195,7 +195,7 @@
       const generateTable = function () {
         const body = document.querySelector("body");
         const newTable = document.createElement("table");
-        newTable.innerHTML = "<tr><td>immagine</td><td>nome prodotto</td><td>quantità</td><td>prezzo</td>";
+        newTable.innerHTML = "<tr><td>immagine</td><td>nome prodotto</td><td>quantità</td><td>prezzo</td></tr>";
         newTable.classList.add("tableArea");
         body.appendChild(newTable);
       };
@@ -203,8 +203,14 @@
       /* ESERCIZIO 12
          Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
       */
+      const table = document.querySelector("table");
+      const addRow = function () {
+        const newLine = document.createElement("tr");
+        newLine.innerHTML = "<tr><td>img</td><td>animali</td><td>1</td><td>50€</td></tr>";
+        table.appendChild(newLine);
+      };
 
-      const addRow = function () {};
+      addRow();
 
       /* ESERCIZIO 14
         Crea una funzione che nasconda le immagini della tabella quando eseguita
